@@ -1,0 +1,210 @@
+platform_action,group,mode,end_user_allowed
+Account Created,Account Created,,TRUE
+Added Champion Analytics Widget,,Champion.Others,FALSE
+Added Champion Assessment Analytics Widget,,Champion.Others,FALSE
+Added Champion Cohort Overview Widget,,Champion.Others,FALSE
+Added Champion Program Analytics Widget,,Champion.Others,FALSE
+Added To-Do Item from Content,Used to-do list,Invest.for.Self.Us,TRUE
+Added User Program Progress Widget,Added Widget,Invest.for.Self.Us,TRUE
+Added User Space Widget,Added Widget,Invest.for.Self.Us,TRUE
+Answered Assessment Item,Answered Assessment Item,Receive.Value,TRUE
+Assigned To-Do Item,Used to-do list,Champion.Others,TRUE
+Became Champion Member,,Champion.Others,FALSE
+Champion Membership Invitation Accepted,Connected to Champion,Invest.for.Self.Us,TRUE
+Champion Membership Invitation Declined,Invitation Declined,Disengage,TRUE
+Cloned Program,,Champion.Others,FALSE
+Commented on Champion Group Space Post,Commented,Invest.for.Self.Us,TRUE
+Commented on Gloofie Space Post,Commented,Invest.for.Self.Us,TRUE
+Commented on Group Space Post,Commented,Invest.for.Self.Us,TRUE
+Commented on Private Space Post,Commented,Invest.for.Self.Us,TRUE
+Commented on Shared Space Post,Commented,Invest.for.Self.Us,TRUE
+Commented on Timeline Post,Commented,Invest.for.Self.Us,TRUE
+Commented on Unactivated Space Post,Commented,Invest.for.Self.Us,TRUE
+Commented on User Group Space Post,Commented,Invest.for.Self.Us,TRUE
+Completed To-Do Item,Used to-do list,Invest.for.Self.Us,TRUE
+Connected to Champion,Connected to Champion,Invest.for.Self.Us,TRUE
+Created a New Dashboard,Created,Invest.for.Self.Us,TRUE
+Created AddToQueueElement Element,,,FALSE
+Created AssessmentMetricPrerequisite Prerequisite,,Champion.Others,FALSE
+Created AssessmentResultPrerequisite Prerequisite,,Champion.Others,FALSE
+Created BlockquoteElement Element,,Champion.Others,FALSE
+Created ChampionConnectElement Element,,Champion.Others,FALSE
+Created CohortConnectElement Element,,Champion.Others,FALSE
+Created ConfigureChampionDashboardElement Element,,Champion.Others,FALSE
+Created ConfigureUserDashboardElement Element,,Champion.Others,FALSE
+Created ContentNode Node,,Champion.Others,FALSE
+Created CreateSpaceElement Element,,Champion.Others,FALSE
+Created DisplayChildrenElement Element,,Champion.Others,FALSE
+Created EparachuteElement Element,,Champion.Others,FALSE
+Created FormElement Element,,Champion.Others,FALSE
+Created FormReferenceElement Element,,,FALSE
+Created Gloofie Space,Created,Invest.for.Self.Us,TRUE
+Created Group Space,Created,Invest.for.Self.Us,NA
+Created HeaderElement Element,,Champion.Others,FALSE
+Created HorizontalRuleElement Element,,Champion.Others,FALSE
+Created ImageElement Element,,Champion.Others,FALSE
+Created IntervalSinceStartPrerequisite Prerequisite,,Champion.Others,FALSE
+Created JoinGroupSpaceElement Element,,Champion.Others,FALSE
+Created ListElement Element,,Champion.Others,FALSE
+Created MomentElement Element,,Champion.Others,FALSE
+Created Note in Content,Created,Invest.for.Self.Us,TRUE
+Created ParagraphElement Element,,Champion.Others,FALSE
+Created PlatformLinkElement Element,,Champion.Others,FALSE
+Created Private Collection,Created,Champion.Others,TRUE
+Created Private Moment,Created,Champion.Others,TRUE
+Created Private Space,Created,Invest.for.Self.Us,TRUE
+Created Program,,Champion.Others,FALSE
+Created Public Collection,Created,Champion.Others,TRUE
+Created Public Moment,Created,Champion.Others,TRUE
+Created QuestionElement Element,,Champion.Others,FALSE
+Created ReferenceNode Node,,Champion.Others,FALSE
+Created ResultElement Element,,Champion.Others,FALSE
+Created Shared Space,Created,Invest.for.Self.Us,TRUE
+Created ToDoListElement Element,,Champion.Others,FALSE
+Created Unactivated Space,Created,Invest.for.Self.Us,TRUE
+Created UnlockDatePrerequisite Prerequisite,,Champion.Others,FALSE
+Created User Group Space,Created,Invest.for.Self.Us,TRUE
+Created UserImageElement Element,,Champion.Others,FALSE
+Created UserNoteElement Element,,Champion.Others,FALSE
+Created VideoElement Element,,Champion.Others,FALSE
+Created WebLinkElement Element,,Champion.Others,FALSE
+Deleted Element,,Champion.Others,FALSE
+Deleted Node,,Champion.Others,FALSE
+Deleted Prerequisite,,Champion.Others,FALSE
+Deleted Program,,Champion.Others,FALSE
+Deleted To-Do Item,Deleted To-Do Item,Disengage,TRUE
+FamilyLife - Clicked Donate Button,FamilyLife - Clicked Donate Button,Invest.for.Self.Us,TRUE
+FamilyLife - Clicked Resource Link,FamilyLife - Clicked Resource Link,Invest.for.Self.Us,TRUE
+FamilyLife - Listened to Broadcast,FamilyLife - Listened to Broadcast,Invest.for.Self.Us,TRUE
+Followed Champion,Connected to Champion,Invest.for.Self.Us,TRUE
+Followed User,Connected to user,Invest.for.Self.Us,TRUE
+Invited User To Champion Group Space,Extended Invitation,Champion.Others,TRUE
+Invited User To Gloofie Space,Extended Invitation,Champion.Others,TRUE
+Invited User To Group Space,Extended Invitation,Champion.Others,TRUE
+Invited User To Private Space,Extended Invitation,Champion.Others,TRUE
+Invited User To Shared Space,Extended Invitation,Champion.Others,TRUE
+Invited User To Unactivated Space,Extended Invitation,Champion.Others,TRUE
+Invited User To User Group Space,Extended Invitation,Champion.Others,TRUE
+Joined Champion Group Space,Joined Space,Invest.for.Self.Us,TRUE
+Joined Gloofie Space,Joined Space,Invest.for.Self.Us,TRUE
+Joined Group Space,Joined Space,Invest.for.Self.Us,TRUE
+Joined Private Space,Joined Space,Invest.for.Self.Us,TRUE
+Joined Shared Space,Joined Space,Invest.for.Self.Us,TRUE
+Joined Unactivated Space,Joined Space,Invest.for.Self.Us,TRUE
+Joined User Group Space,Joined Space,Invest.for.Self.Us,TRUE
+Left Champion Group Space,Left Space,Disengage,TRUE
+Left Gloofie Space,Left Space,Disengage,TRUE
+Left Group Space,Left Space,Disengage,TRUE
+Left Private Space,Left Space,Disengage,TRUE
+Left Shared Space,Left Space,Disengage,TRUE
+Made Collection,Created,Champion.Others,TRUE
+Made Collection Private,,,TRUE
+Made Collection Public,,,TRUE
+Made Moment Private,,,TRUE
+Made Moment Public,,,TRUE
+Post to Timeline,Posted,Invest.for.Self.Us,TRUE
+Posted to Champion Group Space,Posted,Champion.Others,TRUE
+Posted to Group Space,Posted,Champion.Others,TRUE
+Posted to Private Space,Posted,Invest.for.Self.Us,TRUE
+Posted to Shared Space,Posted,Invest.for.Self.Us,TRUE
+Posted to User Group Space,Posted,Invest.for.Self.Us,TRUE
+Progressed Through Content,Progressed Through Content,Receive.Value,TRUE
+Rated Champion,Rated Champion or Program,Champion.Others,TRUE
+Rated Program,Rated Champion or Program,Champion.Others,TRUE
+Shared Collection to Champion Group Space,Shared,Champion.Others,TRUE
+Shared Collection to Group Space,Shared,Champion.Others,TRUE
+Shared Collection to Private Space,Shared,Champion.Others,TRUE
+Shared Collection to Shared Space,Shared,Champion.Others,TRUE
+Shared Collection to Timeline,Shared,Champion.Others,TRUE
+Shared Collection to User Group Space,Shared,Champion.Others,TRUE
+Shared Form Response to Champion Group Space,Shared,Champion.Others,TRUE
+Shared Form Response to Group Space,Shared,Champion.Others,TRUE
+Shared Form Response to Private Space,Shared,Invest.for.Self.Us,TRUE
+Shared Form Response to Shared Space,Shared,Invest.for.Self.Us,TRUE
+Shared Form Response to Timeline,Shared,Invest.for.Self.Us,TRUE
+Shared Form Response to User Group Space,Shared,Invest.for.Self.Us,TRUE
+Shared Link to Champion Group Space,Shared,Champion.Others,TRUE
+Shared Link to Group Space,Shared,Champion.Others,TRUE
+Shared Link to Private Space,Shared,Invest.for.Self.Us,TRUE
+Shared Link to Shared Space,Shared,Invest.for.Self.Us,TRUE
+Shared Link to Timeline,Shared,Invest.for.Self.Us,TRUE
+Shared Link to User Group Space,Shared,Invest.for.Self.Us,TRUE
+Shared Media to Champion Group Space,Shared,Champion.Others,TRUE
+Shared Media to Group Space,Shared,Shared,TRUE
+Shared Media to Private Space,Shared,Invest.for.Self.Us,TRUE
+Shared Media to Shared Space,Shared,Invest.for.Self.Us,TRUE
+Shared Media to Timeline,Shared,Invest.for.Self.Us,TRUE
+Shared Media to User Group Space,Shared,Invest.for.Self.Us,TRUE
+Shared Moment to Champion Group Space,Shared,Champion.Others,TRUE
+Shared Moment to Group Space,Shared,Champion.Others,TRUE
+Shared Moment to Private Space,Shared,Invest.for.Self.Us,TRUE
+Shared Moment to Shared Space,Shared,Invest.for.Self.Us,TRUE
+Shared Moment to Timeline,Shared,Champion.Others,TRUE
+Shared Moment to User Group Space,Shared,Champion.Others,TRUE
+Shared Note to Champion Group Space,Shared,Champion.Others,TRUE
+Shared Note to Group Space,Shared,Champion.Others,TRUE
+Shared Note to Private Space,Shared,Invest.for.Self.Us,TRUE
+Shared Note to Shared Space,Shared,Invest.for.Self.Us,TRUE
+Shared Note to Timeline,Shared,Invest.for.Self.Us,TRUE
+Shared Note to User Group Space,Shared,Invest.for.Self.Us,TRUE
+Shared Post to Champion Group Space,Shared,Champion.Others,TRUE
+Shared Post to Group Space,Shared,Champion.Others,TRUE
+Shared Post to Private Space,Shared,Invest.for.Self.Us,TRUE
+Shared Post to Shared Space,Shared,Invest.for.Self.Us,TRUE
+Shared Post to Timeline,Shared,Invest.for.Self.Us,TRUE
+Shared Post to User Group Space,Shared,Invest.for.Self.Us,TRUE
+Shared Program to Champion Group Space,Shared,Champion.Others,TRUE
+Shared Program to Group Space,Shared,Champion.Others,TRUE
+Shared Program to Private Space,Shared,Invest.for.Self.Us,TRUE
+Shared Program to Shared Space,Shared,Invest.for.Self.Us,TRUE
+Shared Program to Timeline,Shared,Invest.for.Self.Us,TRUE
+Shared Program to User Group Space,Shared,Invest.for.Self.Us,TRUE
+Shared Result to Champion Group Space,Shared,Champion.Others,TRUE
+Shared Result to Group Space,Shared,Champion.Others,TRUE
+Shared Result to Private Space,Shared,Invest.for.Self.Us,TRUE
+Shared Result to Shared Space,Shared,Invest.for.Self.Us,TRUE
+Shared Result to Timeline,Shared,Invest.for.Self.Us,TRUE
+Shared Result to User Group Space,Shared,Invest.for.Self.Us,TRUE
+Space Membership Invitation Accepted,Joined Space,Invest.for.Self.Us,TRUE
+Space Membership Invitation Declined,Invitation Declined,Disengage,TRUE
+Started Assessment,Started Assessment,Receive.Value,TRUE
+Started Content,,,TRUE
+Started Moment,Started Moment,Receive.Value,TRUE
+Started Program,Started Program,Receive.Value,TRUE
+Started Session,Started Session,,TRUE
+Unpublished Program,,Champion.Others,FALSE
+Updated AddToQueueElement Element,,Champion.Others,FALSE
+Updated AssessmentMetricPrerequisite Prerequisite,,Champion.Others,FALSE
+Updated AssessmentResultPrerequisite Prerequisite,,,FALSE
+Updated BlockquoteElement Element,,Champion.Others,FALSE
+Updated CohortConnectElement Element,,,FALSE
+Updated ContentNode Node,,Champion.Others,FALSE
+Updated CreateSpaceElement Element,,Champion.Others,FALSE
+Updated DisplayChildrenElement Element,,Champion.Others,FALSE
+Updated Element,,Champion.Others,FALSE
+Updated EparachuteElement Element,,Champion.Others,FALSE
+Updated FormElement Element,,Champion.Others,FALSE
+Updated HeaderElement Element,,Champion.Others,FALSE
+Updated HorizontalRuleElement Element,,Champion.Others,FALSE
+Updated ImageElement Element,,Champion.Others,FALSE
+Updated IntervalSinceStartPrerequisite Prerequisite,,Champion.Others,FALSE
+Updated JoinGroupSpaceElement Element,,Champion.Others,FALSE
+Updated ListElement Element,,Champion.Others,FALSE
+Updated MomentElement Element,,Champion.Others,FALSE
+Updated Node,,Champion.Others,FALSE
+Updated ParagraphElement Element,,Champion.Others,FALSE
+Updated PlatformLinkElement Element,,Champion.Others,FALSE
+Updated Prerequisite,,Champion.Others,FALSE
+Updated Program,,Champion.Others,FALSE
+Updated QuestionElement Element,,Champion.Others,FALSE
+Updated ReferenceNode Node,,,FALSE
+Updated ResultElement Element,,Champion.Others,FALSE
+Updated ToDoListElement Element,,Champion.Others,FALSE
+Updated UnlockDatePrerequisite Prerequisite,,Champion.Others,FALSE
+Updated UserImageElement Element,,Champion.Others,FALSE
+Updated UserNoteElement Element,,Champion.Others,FALSE
+Updated VideoElement Element,,Champion.Others,FALSE
+Updated WebLinkElement Element,,Champion.Others,FALSE
+User Added Page,,,FALSE
+User Onboarded,User Onboarded,Receive.Value,TRUE
+User Removed Page,,,FALSE
