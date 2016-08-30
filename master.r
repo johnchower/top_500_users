@@ -10,4 +10,5 @@ source('load_data.R')
 source('fix_guest_account_conversions.R')
 source('filter_fake_and_nonexistent_users.R')
 
-
+source('fn_produce_triangle_diagram_data.R')
+produce_triangle_diagram_data() %>% View 
