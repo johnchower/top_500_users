@@ -2,9 +2,11 @@
 
 produce_triangle_diagram_data <- function(up = user_platform_action_facts,
                                           pa = platform_action_facts,
-                                          maxdate = as.Date(as.character(max_date), format = "%Y%m%d")){
+                                          maxdate = as.Date(as.character(max_date), format = "%Y%m%d"),
+                                          user_set = all_users){
   
   up %>%
+    filter(user_id %in% user_set) %>% 
     mutate(date = as.Date(as.character(date_id), format = "%Y%m%d")) %>%
     group_by(user_id) %>%
     mutate(min_date = min(date)) %>% 
@@ -41,5 +43,6 @@ produce_triangle_diagram_data <- function(up = user_platform_action_facts,
                        "Champion Others",
                        "Invest for Self/Us"))) %>%
     mutate(mode = factor(mode, levels = c("Receive Value", "Invest for Self/Us", "Champion Others"))) %>%
-    ungroup    
+    ungroup %>%
+    create_convex_data
 }
