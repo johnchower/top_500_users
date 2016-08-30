@@ -2,11 +2,13 @@
 
 # A simplified version of plot_triangle_diagram
 
-plot_triangle_diagram_v2 <- 
+plot_triangle_diagram <- 
   function(
-    cd = convex_data
+    cd = triangle_diagram_data,
+    user_set = all_users
   ){
     out <- cd %>%
+      filter(user_id %in% user_set) %>%
       mutate(actions_per_day = actions_per_day + .1) %>%
       ggplot(
         aes(y = yval, x = xval)

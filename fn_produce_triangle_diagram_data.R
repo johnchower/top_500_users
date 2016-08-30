@@ -2,11 +2,9 @@
 
 produce_triangle_diagram_data <- function(up = user_platform_action_facts,
                                           pa = platform_action_facts,
-                                          maxdate = as.Date(as.character(max_date), format = "%Y%m%d"),
-                                          user_set = all_users){
+                                          maxdate = as.Date(as.character(max_date), format = "%Y%m%d")){
   
   up %>%
-    filter(user_id %in% user_set) %>% 
     mutate(date = as.Date(as.character(date_id), format = "%Y%m%d")) %>%
     group_by(user_id) %>%
     mutate(min_date = min(date)) %>% 
