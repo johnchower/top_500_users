@@ -24,5 +24,9 @@ name_list <- list(
   list(
     col.names = c("platform_action", "group", "mode", "end_user_allowed"),
     assigned_name = "platform_action_facts"
+  ),
+  list(
+    col.names = c("champion_id", "champion_name",	"champion_organization", "dont.exclude"),
+    assigned_name = "champion_facts"
   )
 )

@@ -55,7 +55,7 @@ all_users <- user_createddate_champid %>%
 
 source('find_top_users.R')
 
-# Testing ground
+# Testing ground ####
 
 produce_cohort_breakdown_graph_data(user_set = top_500_users)
  
