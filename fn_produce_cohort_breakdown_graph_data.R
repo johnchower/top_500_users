@@ -2,12 +2,6 @@
 
 produce_cohort_breakdown_graph_data <- function(user_set,
                                    ucg = user_cohort_groups){
-  set_name <- deparse(substitute(user_set)) %>% {
-    gsub("_", " ", .)
-  } %>% {
-    gsub("users", "", .)
-  }
-  
   ucg %>%
     filter(user_id %in% user_set) %>%
     group_by(cohort_group_name) %>%

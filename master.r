@@ -1,5 +1,8 @@
 # Master Script
 
+# This script loads all the data, functions, and libraries that are required for
+# further analysis.
+
 # Libraries and functions ####
 library(rprojroot)
 library(plyr)
@@ -18,6 +21,8 @@ source('fn_produce_chisquare_plot_data.r')
 source('fn_prep_user_platform_action_data_for_chisquare_analysis.R')
 source('fn_bar_chart_layout.r')
 source('fn_produce_cohort_breakdown_graph_data.R')
+source('fn_graph_user_cohort_breakdown.r')
+source('fn_save_or_print.r')
 
 # Parameters ####
 
@@ -54,8 +59,3 @@ all_users <- user_createddate_champid %>%
   unique
 
 source('find_top_users.R')
-
-# Testing ground ####
-
-produce_cohort_breakdown_graph_data(user_set = top_500_users)
- 
