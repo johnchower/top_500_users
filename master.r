@@ -26,7 +26,7 @@ source('fn_save_or_print.r')
 
 # Parameters ####
 
-max_date <- 20160801 # Filter out all data for users who joined after this date.
+max_date <- 20160830 # Filter out all data for users who joined after this date.
 one_month_ago <- calculate_one_month_ago(max_date)
 
 user_tier_cutoffs <- c(10, 50, 100, 250, 500) # Default: look at top 10, 50, 100, 250, 500 users.
