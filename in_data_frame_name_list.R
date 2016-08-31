@@ -28,5 +28,9 @@ name_list <- list(
   list(
     col.names = c("champion_id", "champion_name",	"champion_organization", "dont.exclude"),
     assigned_name = "champion_facts"
+  ),
+  list(
+    col.names = c("user_id", "email", "first_name", "last_name"),
+    assigned_name = "user_email_name"
   )
 )
