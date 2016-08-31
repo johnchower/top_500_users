@@ -6,7 +6,7 @@
 produce_chisquare_plot_data <- function(results, # Take this from a chisquare analysis. You'll have to apply your own filters before calling the function
                                         group_variable = colnames(results)[1]){
     results %>% {
-        colnames(.)[3] <- "observed"
+      colnames(.)[3] <- "observed"
         return(.)
       } %>% 
       group_by_(group_variable) %>% 

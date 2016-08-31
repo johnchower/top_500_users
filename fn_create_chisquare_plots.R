@@ -8,6 +8,8 @@ create_chisquare_plots <- function(
   , thing_being_sliced = "Users" # What does each graph's subset consist of?
   , err_bar_width = 5
   , pthresh = NULL
+  , positive_only = T
+  , groups_to_remove = c("", "Started Session", "Deleted To-Do Item", "Added Widget", "Used to-do list", "User Onboarded", "Left Space")
   , ... # Pass the bar chart layout arguments 
 ){
   plot.data %>%
@@ -16,6 +18,12 @@ create_chisquare_plots <- function(
        if(!is.null(pthresh)){
          plot_data %<>% filter(pvalue <= pthresh)
        }
+       
+       if(positive_only){
+         plot_data %<>% filter(zscore >= 0)
+       }
+       
+       plot_data %<>% filter(!(group %in% groups_to_remove))
        
         out_plot <-  
           plot_ly(
