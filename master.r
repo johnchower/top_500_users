@@ -9,6 +9,7 @@ library(plyr)
 library(dplyr)
 library(magrittr)
 library(plotly)
+library(htmlwidgets)
 
 source('fn_create_convex_data.R')
 source('fn_produce_triangle_diagram_data.R')
@@ -26,7 +27,7 @@ source('fn_save_or_print.r')
 
 # Parameters ####
 
-max_date <- 20160830 # Filter out all data for users who joined after this date.
+max_date <- 20160831 # Filter out all data for users who joined after this date.
 one_month_ago <- calculate_one_month_ago(max_date)
 
 user_tier_cutoffs <- c(10, 50, 100, 250, 500) # Default: look at top 10, 50, 100, 250, 500 users.
@@ -59,3 +60,13 @@ all_users <- user_createddate_champid %>%
   unique
 
 source('find_top_users.R')
+
+# Clean up ####
+# rm(x, y,
+#    assign_by_colnames,
+#    assign_by_colnames_listversion,
+#    create_convex_data,
+#    produce_triangle_diagram_data,
+#    filter_user_ids,
+#    find_top_n_users,
+#    )
