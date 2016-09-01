@@ -7,7 +7,7 @@ where u.email is not null
 and u.email NOT SIMILAR TO '%(test|tester|gloowizard|tangogroup|gloo|cru|example|lauderdale|10|doe|tango|singularity-interactive)%'
 and u.account_type='End User'
 
-/* user_to_champion_bridges */
+/* user_createddate_champid */
 select upa.user_id, upa.date_id account_created_date_id, uch.champion_id
 from user_platform_action_facts upa
 join user_dimensions u
@@ -37,3 +37,14 @@ select id user_id, email, first_name, last_name
 from user_dimensions u
 where u.email is not null 
 and u.email NOT SIMILAR TO '%(test|tester|gloowizard|tangogroup|gloo|cru|example|lauderdale|10|doe|tango|singularity-interactive)%'
+
+/* session_duration_facts */
+select s.user_id, s.duration, s.date_id 
+from session_duration_fact s
+join user_dimensions u
+on u.id = s.user_id
+where u.email is not null 
+and u.email NOT SIMILAR TO '%(test|tester|gloowizard|tangogroup|gloo|cru|example|lauderdale|10|doe|tango|singularity-interactive)%'
+
+/* champion_only_actions */
+/* https://looker.gloo.us/explore/gloo/user_platform_action_facts?qid=ku61WLMH9aCw4CSHgMzqdj */
