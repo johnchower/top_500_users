@@ -12,5 +12,7 @@ filter_user_ids <- function(df, user.id.vec){
   if(length(user_colname) == 1){
     df[!(df[[user_colname]] %in% user.id.vec),] %>%
       return
-  } else {data.frame(error = "Multiple column names containing the string 'user'")}
+  } else if(length(user_colname) == 0){
+    return(df)
+  } else {return(data.frame(error = "Multiple column names containing the string 'user'"))}
 }

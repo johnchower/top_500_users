@@ -29,7 +29,6 @@ source('fn_save_or_print.r')
 
 max_date <- 20160831 # Filter out all data for users who joined after this date.
 one_month_ago <- calculate_one_month_ago(max_date)
-
 user_tier_cutoffs <- c(10, 50, 100, 250, 500) # Default: look at top 10, 50, 100, 250, 500 users.
 
 # Users are ranked by one of two metrics. 
@@ -41,6 +40,7 @@ ranking_metric <- "actions"
 
 # Load data, clean it up, and manipulate it into required formats for plots later ####
 source('load_data.R')
+source('read_user_filters.R')
 source('fix_guest_account_conversions.R')
 source('filter_fake_and_nonexistent_users.R')
 

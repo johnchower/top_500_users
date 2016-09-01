@@ -17,10 +17,10 @@ name_list <- list(
     col.names = c("user_id", "date_id", "platform_action"), 
     assigned_name = "user_platform_action_facts"
   ),
-  list(
-    col.names = c("user_id"),
-    assigned_name = "fake_end_users"
-  ),
+  # list(
+  #   col.names = c("user_id"),
+  #   assigned_name = "fake_end_users"
+  # ),
   list(
     col.names = c("platform_action", "group", "mode", "end_user_allowed"),
     assigned_name = "platform_action_facts"
@@ -32,5 +32,17 @@ name_list <- list(
   list(
     col.names = c("user_id", "email", "first_name", "last_name"),
     assigned_name = "user_email_name"
+  ),
+  list(
+    col.names = c("filter_type", "filter"),
+    assigned_name = "user_filters"
+  ),
+  list(
+    col.names = c("filter_type", "filter"),
+    assigned_name = "user_filters"
+  ),
+  list(
+    col.names = c("User.Platform.Action.Facts.Platform.Action"),
+    assigned_name = "champion_only_actions"
   )
 )

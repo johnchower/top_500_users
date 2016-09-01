@@ -14,8 +14,7 @@ fake_and_nonexistent_users <- rbind(data.frame(user_id = fake_end_users),
   
 source('fn_filter_user_ids.R')
 
-c(x,y) %>%
-  lapply(FUN = function(df)filter_user_ids(df, fake_and_nonexistent_users)) %>%
+c(x,y) %>% 
+  lapply(FUN = function(df)filter_user_ids(df, user.id.vec = fake_and_nonexistent_users$user_id)) %>% 
   lapply(FUN = function(df){assign_by_colnames_listversion(df, name_list)}) 
   
-
