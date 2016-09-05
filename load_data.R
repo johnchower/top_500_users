@@ -17,3 +17,9 @@ y <- static.csvs %>%
 c(x, y) %>%
   lapply(FUN = function(df){assign_by_colnames_listversion(df, name_list)})
 
+champion_only_actions %<>% 
+  rename(platform_action = User.Platform.Action.Facts.Platform.Action)
+
+platform_action_facts %<>%
+  mutate(end_user_allowed = !(platform_action %in% champion_only_actions$platform_action))
+
