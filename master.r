@@ -24,7 +24,8 @@ source('fn_bar_chart_layout.r')
 source('fn_produce_cohort_breakdown_graph_data.R')
 source('fn_graph_user_cohort_breakdown.r')
 source('fn_save_or_print.r')
-
+source('fn_assign_by_colnames.R')
+source('fn_load_data.r')
 # Parameters ####
 
 max_date <- 20160831 # Filter out all data for users who joined after this date.
@@ -39,7 +40,22 @@ user_tier_cutoffs <- c(10, 50, 100, 250, 500) # Default: look at top 10, 50, 100
 ranking_metric <- "actions"
 
 # Load data, clean it up, and manipulate it into required formats for plots later ####
-source('load_data.R')
+# source('load_data.R')
+source('in_data_frame_name_list.R')
+base.df.list <- load_data() 
+
+base.df.list %>%
+  lapply(FUN = function(df){assign_by_colnames_listversion(df, name_list)})
+         
+champion_only_actions %<>% 
+  rename(platform_action = User.Platform.Action.Facts.Platform.Action)
+
+platform_action_facts %<>% 
+  mutate(end_user_allowed = !(platform_action %in% champion_only_actions$platform_action))
+
+                        
+
+
 source('read_user_filters.R')
 source('fix_guest_account_conversions.R')
 source('filter_fake_and_nonexistent_users.R')

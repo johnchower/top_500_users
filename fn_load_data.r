@@ -2,11 +2,11 @@
 # Reads all csv files in looker.csvs and static.csvs
 # Outputs a list of data frames for further manipulation.
 
-load_data <- function(name_list,
-                      looker.csvs = paste(find_root(has_file("README.md")),
+load_data <- function(df.list=name_list,
+                      looker.csvs=paste(find_root(has_file("README.md")),
                                           "looker_csvs",
                                           sep = "/"),
-                      static.csvs = paste(find_root(has_file("README.md")),
+                      static.csvs=paste(find_root(has_file("README.md")),
                                           "static_csvs", 
                                           sep = "/")){
 x <- looker.csvs %>%
