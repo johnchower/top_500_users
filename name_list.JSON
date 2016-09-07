@@ -1,0 +1,38 @@
+[ 
+  {
+    "col.names" : ["cohort_id", "champion_id"],
+    "assigned_name" : "cohort_to_champion_bridges"
+  },
+  {
+    "col.names" : ["user_id", "cohort_id", "created_date_id"],
+    "assigned_name" : "user_to_cohort_bridges"
+  },
+  {
+    "col.names" : ["user_id", "account_created_date_id", "champion_id"],
+    "assigned_name" : "user_createddate_champid"
+  },
+  {
+    "col.names" : ["user_id", "date_id", "platform_action"],
+    "assigned_name" : "user_platform_action_facts"
+  },
+  {
+    "col.names" : ["platform_action", "group", "mode", "end_user_allowed"],
+    "assigned_name" : "platfom_action_facts"
+  },
+  {
+    "col.names" : ["champion_id", "champion_name", "champion_organization", "dont.exclude"],
+    "assigned_name" : "champion_facts"
+  },
+  {
+    "col.names" : ["user_id", "email", "first_name", "last_name"],
+    "assigned_name" : "user_email_name"
+  },
+  {
+    "col.names" : ["filter_type", "filter"],
+    "assigned_name" : "user_filters"
+  },
+  {
+    "col.names" : ["User.Platform.Action.Facts.Platform.Action"],
+    "assigned_name" : "champion_only_actions"
+  }
+]

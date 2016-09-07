@@ -10,6 +10,7 @@ library(dplyr)
 library(magrittr)
 library(plotly)
 library(htmlwidgets)
+library(RJSONIO)
 
 source('fn_create_convex_data.R')
 source('fn_produce_triangle_diagram_data.R')
@@ -40,8 +41,7 @@ user_tier_cutoffs <- c(10, 50, 100, 250, 500) # Default: look at top 10, 50, 100
 ranking_metric <- "actions"
 
 # Load data, clean it up, and manipulate it into required formats for plots later ####
-# source('load_data.R')
-source('in_data_frame_name_list.R')
+name_list <- fromJSON('name_list.JSON')
 base.df.list <- load_data() 
 
 base.df.list %>%
@@ -52,9 +52,6 @@ champion_only_actions %<>%
 
 platform_action_facts %<>% 
   mutate(end_user_allowed = !(platform_action %in% champion_only_actions$platform_action))
-
-                        
-
 
 source('read_user_filters.R')
 source('fix_guest_account_conversions.R')
