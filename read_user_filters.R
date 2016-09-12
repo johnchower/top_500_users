@@ -20,6 +20,7 @@ internal_gloo_users <- user_filters %>%
   {.$filter} %>%
   as.numeric
 
-fake_end_users <- data.frame(user_id = c(users_with_champ_emails, internal_gloo_users)) %>%
+fake_end_users <- data.frame(user_id = c(users_with_champ_emails,
+                                         internal_gloo_users)) %>%
   unique
   
