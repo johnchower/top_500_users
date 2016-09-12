@@ -17,7 +17,7 @@
   },
   {
     "col.names" : ["platform_action", "group", "mode", "end_user_allowed"],
-    "assigned_name" : "platfom_action_facts"
+    "assigned_name" : "platform_action_facts"
   },
   {
     "col.names" : ["champion_id", "champion_name", "champion_organization", "dont.exclude"],
