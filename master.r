@@ -44,14 +44,14 @@ ranking_metric <- "actions"
 name_list <- fromJSON('name_list.JSON')
 base.df.list <- load_data() 
 
-base.df.list %>%
-  lapply(FUN = function(df){assign_by_colnames_listversion(df, name_list)})
+lapply(base.df.list, FUN = function(df){assign_by_colnames_listversion(df, name_list)})
          
 champion_only_actions %<>% 
   rename(platform_action = User.Platform.Action.Facts.Platform.Action)
 
 platform_action_facts %<>% 
-  mutate(end_user_allowed = !(platform_action %in% champion_only_actions$platform_action))
+  mutate(end_user_allowed=
+         !(platform_action %in% champion_only_actions$platform_action))
 
 source('read_user_filters.R')
 source('fix_guest_account_conversions.R')
@@ -73,13 +73,3 @@ all_users <- user_createddate_champid %>%
   unique
 
 source('find_top_users.R')
-
-# Clean up ####
-# rm(x, y,
-#    assign_by_colnames,
-#    assign_by_colnames_listversion,
-#    create_convex_data,
-#    produce_triangle_diagram_data,
-#    filter_user_ids,
-#    find_top_n_users,
-#    )
