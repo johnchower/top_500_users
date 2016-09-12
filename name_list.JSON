@@ -8,7 +8,7 @@
     "assigned_name" : "user_to_cohort_bridges"
   },
   {
-    "col.names" : ["user_id", "account_created_date_id", "champion_id"],
+    "col.names" : ["user_id", "account_created_date_id", "champion_id", "account_type"],
     "assigned_name" : "user_createddate_champid"
   },
   {
