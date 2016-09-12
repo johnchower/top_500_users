@@ -5,3 +5,4 @@
 *.Rproj
 *.swp
 ls_str.txt
+*Session.vim
