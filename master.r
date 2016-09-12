@@ -71,8 +71,6 @@ source('find_top_users.R')
 champion_only_actions <- rename(champion_only_actions,
                                 platform_action = User.Platform.Action.Facts.Platform.Action)
 
-
-
 platform_action_facts %<>% 
-  dplyr::mutate(end_user_allowed=
+  mutate(end_user_allowed=
          !(platform_action %in% champion_only_actions$platform_action))
