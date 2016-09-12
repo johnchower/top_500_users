@@ -1,0 +1,43 @@
+Connect,Consume,Create,Invite,Feed (action in feed),Space (action in space),To-do,Other actions
+Connected to Champion,Started Content,Created Program,Invited User to Private Space,Posted to Feed,Shared Collection to Group Space,Added To-Do Item from Content,Added Champion Analytics Widget
+Connected to User,Started Moment,Created Private Collection,Invited User to Shared Space,Shared Collection to Feed,Shared Collection to Private Space,Assigned To-Do Item,Added Champion Assessment Analytics Widget
+Followed User,Answered Assessment Item,Created Public Collection,Invited User to Group Space,Shared Form Response to Feed,Shared Collection to Shared Space,Completed To-Do Item,Added Champion Cohort Overview Widget
+,FamilyLife - Clicked Donate Button,Created Private Moment,User Onboarded,Shared Media to Feed,Shared Form Response to Group Space,Deleted To-Do Item,Added Champion Program Analytics Widget
+,FamilyLife - Clicked Resource Link,Created Public Moment,,Shared Moment to Feed,Shared Form Response to Private Space,,Added User Program Progress Widget
+,FamilyLife - Listened to Broadcast,Made Collection Private,,Shared Note to Feed,Shared Form Response to Shared Space,,Added User Space Widget
+,Progressed Through Content,Made Collection Public,,Shared Link to Feed,Shared Link to Group Space,,Became Champion Member
+,User Added Page,Made Moment Private,,Shared Post to Feed,Shared Link to Private Space,,Became Organization Member
+,User Removed Page,Made Moment Public,,Shared Program to Feed,Shared Link to Shared Space,,Champion Membership Invitation Accepted
+,,Created Note in Content,,Shared Result to Feed,Shared Media to Group Space,,Champion Membership Invitation Declined
+,,,,Commented on Feed Post,Shared Media to Private Space,,Rated Champion
+,,,,,Shared Media to Shared Space,,Rated Program
+,,,,,Shared Moment to Group Space,,
+,,,,,Shared Moment to Private Space,,
+,,,,,Shared Moment to Shared Space,,
+,,,,,Shared Note to Group Space,,
+,,,,,Shared Note to Private Space,,
+,,,,,Shared Note to Shared Space,,
+,,,,,Shared Post to Group Space,,
+,,,,,Shared Post to Private Space,,
+,,,,,Shared Post to Shared Space,,
+,,,,,Shared Program to Group Space,,
+,,,,,Shared Program to Private Space,,
+,,,,,Shared Program to Shared Space,,
+,,,,,Shared Result to Group Space,,
+,,,,,Shared Result to Private Space,,
+,,,,,Shared Result to Shared Space,,
+,,,,,Joined Group Space,,
+,,,,,Joined Private Space,,
+,,,,,Joined Shared Space,,
+,,,,,Joined Unactivated Space,,
+,,,,,Left Group Space,,
+,,,,,Left Private Space,,
+,,,,,Left Shared Space,,
+,,,,,Space Membership Invitation Accepted,,
+,,,,,Space Membership Invitation Declined,,
+,,,,,Commented on Private Space,,
+,,,,,Commented on Shared Space,,
+,,,,,Commented on Group Space,,
+,,,,,Posted to Private Space,,
+,,,,,Posted to Shared Space,,
+,,,,,Posted to Group Space,,
