@@ -29,7 +29,7 @@ source('fn_assign_by_colnames.R')
 source('fn_load_data.r')
 # Parameters ####
 
-max_date <- 20160831 # Filter out all data for users who joined after this date.
+max_date <- 20160830 # Filter out all data for users who joined after this date.
 one_month_ago <- calculate_one_month_ago(max_date)
 user_tier_cutoffs <- c(10, 50, 100, 250, 500) # Default: look at top 10, 50, 100, 250, 500 users.
 
@@ -46,13 +46,6 @@ base.df.list <- load_data()
 
 lapply(base.df.list, FUN = function(df){assign_by_colnames_listversion(df, name_list)})
          
-champion_only_actions %<>% 
-  rename(platform_action = User.Platform.Action.Facts.Platform.Action)
-
-platform_action_facts %<>% 
-  mutate(end_user_allowed=
-         !(platform_action %in% champion_only_actions$platform_action))
-
 source('read_user_filters.R')
 source('fix_guest_account_conversions.R')
 source('filter_fake_and_nonexistent_users.R')
@@ -73,3 +66,13 @@ all_users <- user_createddate_champid %>%
   unique
 
 source('find_top_users.R')
+
+# Rename columns and use true "end user" actions.
+champion_only_actions <- rename(champion_only_actions,
+                                platform_action = User.Platform.Action.Facts.Platform.Action)
+
+
+
+platform_action_facts %<>% 
+  dplyr::mutate(end_user_allowed=
+         !(platform_action %in% champion_only_actions$platform_action))
