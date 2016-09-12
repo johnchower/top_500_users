@@ -20,4 +20,4 @@ for(i in 1:ncol(new_action_group_temp)){
 
 }
 
-write.csv(platformaction_group_new, row.names = F)
+write.csv(platformaction_group_new, file = "static_csvs/platformaction_group_new.csv", row.names = F)
