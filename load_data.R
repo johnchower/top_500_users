@@ -41,11 +41,6 @@ rm(nonexistent_users)
 user_to_cohort_bridges %<>% 
   filter(created_date_id <= max_date)
 
-# Join platform action group to user_platform_action_date
-
-user_platform_action_date_group <- user_platform_action_facts %>%
-  left_join(select(platform_action_facts, platform_action, group))
-
 # Produce user_cohort_groups
 
 user_cohort_groups <- user_to_cohort_bridges %>%
@@ -81,3 +76,8 @@ platform_action_facts %<>%
          !(platform_action %in% champion_only_actions$platform_action)) %>%
   left_join(rename(platform_action_group_new, new_group = group)) %>%
   mutate(new_group = ifelse(is.na(new_group),"",new_group))
+
+# Join platform action group to user_platform_action_date
+
+user_platform_action_date_group <- user_platform_action_facts %>%
+  left_join(select(platform_action_facts, platform_action, group, new_group))
