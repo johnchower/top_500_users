@@ -12,7 +12,7 @@ find_top_n_users <- function(n,
                 if(results_by == "actions"){
                   return(arrange(., desc(number_of_actions_past_28)))
                 } else {return(arrange(., desc(number_of_active_days_past_28)))}           
-              } %>%
+  } %>%
     slice(1:n) %>%
     {.$user_id} %>%
     unique

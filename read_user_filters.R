@@ -1,5 +1,4 @@
-# read_user_filters
-
+# read_user_filters 
 # email filters
 
 users_with_champ_emails <- user_filters %>%
@@ -15,7 +14,7 @@ users_with_champ_emails <- user_filters %>%
   ) %>%
   unlist 
 
-internal_gloo_users <- user_filters %>%
+end_users_who_are_actually_internal_gloo_users <- user_filters %>%
   filter(filter_type == "user_id") %>%
   {.$filter} %>%
   as.numeric
