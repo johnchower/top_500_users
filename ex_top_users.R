@@ -1,14 +1,5 @@
 # Exploration: 
 
-# Functions and libraries
-source('fn_create_underscore_version_of_name.R')
-source('fn_chiplot.R')
-
-library(htmlwidgets)
-
-# Parameters
-outloc <- "/Users/johnhower/Google Drive/Analytics_graphs/top_500_active_users_aug_31"
-
 # Plot the cohort groupings for the top n users:
 
 graph_user_cohort_breakdown(top_10_users, save_plots = F)

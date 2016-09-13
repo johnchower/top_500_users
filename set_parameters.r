@@ -10,3 +10,5 @@ user_tier_cutoffs <- c(10, 50, 100, 250, 500) # Default: look at top 10, 50, 100
 # "active_days" - the most active user is the one with the most active days in 
 #   the past 28 days.
 ranking_metric <- "actions"
+
+writeloc <- "~/'Google Drive'/Analytics_graphs/top_500_active_users_aug_31_prime"
