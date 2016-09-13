@@ -2,11 +2,11 @@ let SessionLoad = 1
 if &cp | set nocp | endif
 let s:cpo_save=&cpo
 set cpo&vim
-inoremap <C-Space> 
-imap <Nul> <C-Space>
-inoremap <expr> <Up> pumvisible() ? "\" : "\<Up>"
-inoremap <expr> <S-Tab> pumvisible() ? "\" : "\<S-Tab>"
 inoremap <expr> <Down> pumvisible() ? "\" : "\<Down>"
+inoremap <expr> <S-Tab> pumvisible() ? "\" : "\<S-Tab>"
+inoremap <expr> <Up> pumvisible() ? "\" : "\<Up>"
+imap <Nul> <C-Space>
+inoremap <C-Space> 
 nmap v <Plug>SlimeConfig
 nmap  <Plug>SlimeParagraphSend
 xmap  <Plug>SlimeRegionSend
@@ -32,7 +32,6 @@ set background=dark
 set backspace=indent,eol,start
 set completefunc=youcompleteme#Complete
 set completeopt=preview,menuone
-set cpoptions=aAceFsB
 set expandtab
 set fileencodings=ucs-bom,utf-8,default,latin1
 set helplang=en
@@ -40,7 +39,6 @@ set langmenu=none
 set operatorfunc=<SNR>33_SlimeSendOp
 set runtimepath=~/.vim,~/.vim/bundle/Vundle.vim,~/.vim/bundle/nerdtree,~/.vim/bundle/indentpython.vim,~/.vim/bundle/YouCompleteMe,~/.vim/bundle/Nvim-R,~/.vim/bundle/vim-slime,~/.vim/bundle/vim-tmux-navigator,/usr/local/Cellar/macvim/7.4-107/MacVim.app/Contents/Resources/vim/vimfiles,/usr/local/Cellar/macvim/7.4-107/MacVim.app/Contents/Resources/vim/runtime,/usr/local/Cellar/macvim/7.4-107/MacVim.app/Contents/Resources/vim/vimfiles/after,~/.vim/after,~/.vim/bundle/Vundle.vim,~/.vim/bundle/Vundle.vim/after,~/.vim/bundle/nerdtree/after,~/.vim/bundle/indentpython.vim/after,~/.vim/bundle/YouCompleteMe/after,~/.vim/bundle/Nvim-R/after,~/.vim/bundle/vim-slime/after,~/.vim/bundle/vim-tmux-navigator/after
 set shiftwidth=2
-set shortmess=filnxtToOc
 set showmatch
 set softtabstop=2
 set splitbelow
@@ -49,7 +47,6 @@ set switchbuf=useopen,usetab
 set textwidth=79
 set updatetime=2000
 set wildmenu
-set window=43
 let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0
 let v:this_session=expand("<sfile>:p")
 silent only
@@ -58,10 +55,21 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +43 master.r
+badd +67 master.r
 badd +2 download_csvs.R
-badd +23 load_data.R
+badd +20 load_data.R
 badd +1 in_data_frame_name_list.R
+badd +8 fn_load_data.r
+badd +2 fn_assign_by_colnames.R
+badd +1 data_frame_name_list.csv
+badd +1 fn_data_frame_name_listr
+badd +1 fn_data_frame_name_list.r
+badd +35 name_list.JSON
+badd +1 ls_str.txt
+badd +14 read_user_filters.R
+badd +17 filter_fake_and_nonexistent_users.R
+badd +6 ex_find_champ_proportion
+badd +7 ex_find_champ_proportion.r
 argglobal
 silent! argdel *
 argadd master.r
@@ -312,22 +320,22 @@ setlocal thesaurus=
 setlocal noundofile
 setlocal undolevels=-123456
 setlocal nowinfixheight
-setlocal nowinfixwidth
+setlocal winfixwidth
 setlocal wrap
 setlocal wrapmargin=0
 silent! normal! zE
-let s:l = 35 - ((30 * winheight(0) + 21) / 43)
+let s:l = 9 - ((8 * winheight(0) + 21) / 43)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-35
+9
 normal! 0
 tabnext 1
 if exists('s:wipebuf')
   silent exe 'bwipe ' . s:wipebuf
 endif
 unlet! s:wipebuf
-set winheight=1 winwidth=20 shortmess=filnxtToOc
+set winheight=1 winwidth=20 shortmess=filnxtToO
 let s:sx = expand("<sfile>:p:r")."x.vim"
 if file_readable(s:sx)
   exe "source " . fnameescape(s:sx)
