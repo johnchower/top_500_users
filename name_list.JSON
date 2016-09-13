@@ -34,5 +34,9 @@
   {
     "col.names" : ["User.Platform.Action.Facts.Platform.Action"],
     "assigned_name" : "champion_only_actions"
+  },
+  {
+    "col.names" : ["platform_action", "group"],
+    "assigned_name" : "platform_action_group_new"
   }
 ]

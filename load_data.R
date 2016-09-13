@@ -78,4 +78,6 @@ champion_only_actions <- rename(champion_only_actions,
 
 platform_action_facts %<>% 
   mutate(end_user_allowed=
-         !(platform_action %in% champion_only_actions$platform_action))
+         !(platform_action %in% champion_only_actions$platform_action)) %>%
+  left_join(rename(platform_action_group_new, new_group = group)) %>%
+  mutate(new_group = ifelse(is.na(new_group),"",new_group))
