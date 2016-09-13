@@ -2,11 +2,11 @@
 
 # Plot the cohort groupings for the top n users:
 
-graph_user_cohort_breakdown(top_10_users, save_plots = F)
-graph_user_cohort_breakdown(top_50_users, save_plots = F)
-graph_user_cohort_breakdown(top_100_users, save_plots = F)
-graph_user_cohort_breakdown(top_250_users, save_plots = F)
-graph_user_cohort_breakdown(top_500_users, save_plots = F)
+graph_user_cohort_breakdown(top_10_users, n = 4, save_plots = F)
+graph_user_cohort_breakdown(top_50_users,  n = 5, save_plots = F)
+graph_user_cohort_breakdown(top_100_users, n = 5, save_plots = F)
+graph_user_cohort_breakdown(top_250_users, n = 5, save_plots = F)
+graph_user_cohort_breakdown(top_500_users, n = 5, save_plots = F)
 
 # Determine who the top 5 cohorts are among the most active user tiers
 active_cohort_groups <-user_tier_cutoffs %>% 
