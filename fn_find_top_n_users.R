@@ -1,11 +1,12 @@
 # Function: find_top_n_users
 
 find_top_n_users <- function(n, 
+                             user_subset = all_users,
                              up = user_platform_action_facts, 
                              mindate = one_month_ago,
                              results_by = ranking_metric){
   up %>%
-    filter(date_id > mindate) %>% 
+    filter(date_id > mindate, user_id %in% user_subset) %>% 
     group_by(user_id) %>% 
     summarise(number_of_active_days_past28 = length(unique(date_id)),
               number_of_actions_past_28 = n()) %>% {

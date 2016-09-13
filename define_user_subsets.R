@@ -12,15 +12,6 @@ nominally_end_users <- user_createddate_champid %>%
 end_users_who_have_taken_a_champ_only_action <- 
   find_champ_users(nominally_end_users)
 
-# Top N users, N %in% user_tier_cutoffs
-for(N in user_tier_cutoffs){
-  name <- paste("top", N, "users", sep = "_")
-
-  find_top_n_users(n = N) %>% {
-    assign(name, ., envir = globalenv())
-  }
-}
-
 users_with_champ_emails <- user_filters %>%
   filter(filter_type == "email") %>%
   {.$filter} %>%
