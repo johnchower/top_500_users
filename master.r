@@ -27,9 +27,10 @@ source('fn_graph_user_cohort_breakdown.r')
 source('fn_save_or_print.r')
 source('fn_assign_by_colnames.R')
 source('fn_load_data.r')
+source('fn_filter_user_ids.R')
 # Parameters ####
 
-max_date <- 20160830 # Filter out all data for users who joined after this date.
+max_date <- 20160909 # Filter out all data for users who joined after this date.
 one_month_ago <- calculate_one_month_ago(max_date)
 user_tier_cutoffs <- c(10, 50, 100, 250, 500) # Default: look at top 10, 50, 100, 250, 500 users.
 
@@ -48,7 +49,7 @@ lapply(base.df.list, FUN = function(df){assign_by_colnames_listversion(df, name_
          
 source('read_user_filters.R')
 source('fix_guest_account_conversions.R')
-source('filter_fake_and_nonexistent_users.R')
+source('filter_nonexistent_users.R')
 
 triangle_diagram_data <- produce_triangle_diagram_data()
 
