@@ -24,6 +24,7 @@ user_platform_action_facts %<>%
   )) %>% 
   select(-first_action_date_id)
   
+
 # Filter out any users whose account was created after the max_date cutoff
 nonexistent_users <- user_createddate_champid %>%
   filter(account_created_date_id > max_date) %>%

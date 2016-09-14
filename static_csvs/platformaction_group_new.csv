@@ -1,96 +1,107 @@
-"platform_action","group"
-"Added Champion Analytics Widget","Other.actions"
-"Added Champion Assessment Analytics Widget","Other.actions"
-"Added Champion Cohort Overview Widget","Other.actions"
-"Added Champion Program Analytics Widget","Other.actions"
-"Added User Program Progress Widget","Other.actions"
-"Added User Space Widget","Other.actions"
-"Became Champion Member","Other.actions"
-"Became Organization Member","Other.actions"
-"Champion Membership Invitation Accepted","Other.actions"
-"Champion Membership Invitation Declined","Other.actions"
-"Rated Champion","Other.actions"
-"Rated Program","Other.actions"
-"Added To-Do Item from Content","To.do"
-"Assigned To-Do Item","To.do"
-"Completed To-Do Item","To.do"
-"Deleted To-Do Item","To.do"
-"Shared Collection to Group Space","Space..action.in.space."
-"Shared Collection to Private Space","Space..action.in.space."
-"Shared Collection to Shared Space","Space..action.in.space."
-"Shared Form Response to Group Space","Space..action.in.space."
-"Shared Form Response to Private Space","Space..action.in.space."
-"Shared Form Response to Shared Space","Space..action.in.space."
-"Shared Link to Group Space","Space..action.in.space."
-"Shared Link to Private Space","Space..action.in.space."
-"Shared Link to Shared Space","Space..action.in.space."
-"Shared Media to Group Space","Space..action.in.space."
-"Shared Media to Private Space","Space..action.in.space."
-"Shared Media to Shared Space","Space..action.in.space."
-"Shared Moment to Group Space","Space..action.in.space."
-"Shared Moment to Private Space","Space..action.in.space."
-"Shared Moment to Shared Space","Space..action.in.space."
-"Shared Note to Group Space","Space..action.in.space."
-"Shared Note to Private Space","Space..action.in.space."
-"Shared Note to Shared Space","Space..action.in.space."
-"Shared Post to Group Space","Space..action.in.space."
-"Shared Post to Private Space","Space..action.in.space."
-"Shared Post to Shared Space","Space..action.in.space."
-"Shared Program to Group Space","Space..action.in.space."
-"Shared Program to Private Space","Space..action.in.space."
-"Shared Program to Shared Space","Space..action.in.space."
-"Shared Result to Group Space","Space..action.in.space."
-"Shared Result to Private Space","Space..action.in.space."
-"Shared Result to Shared Space","Space..action.in.space."
-"Joined Group Space","Space..action.in.space."
-"Joined Private Space","Space..action.in.space."
-"Joined Shared Space","Space..action.in.space."
-"Joined Unactivated Space","Space..action.in.space."
-"Left Group Space","Space..action.in.space."
-"Left Private Space","Space..action.in.space."
-"Left Shared Space","Space..action.in.space."
-"Space Membership Invitation Accepted","Space..action.in.space."
-"Space Membership Invitation Declined","Space..action.in.space."
-"Commented on Private Space","Space..action.in.space."
-"Commented on Shared Space","Space..action.in.space."
-"Commented on Group Space","Space..action.in.space."
-"Posted to Private Space","Space..action.in.space."
-"Posted to Shared Space","Space..action.in.space."
-"Posted to Group Space","Space..action.in.space."
-"Posted to Feed","Feed..action.in.feed."
-"Shared Collection to Feed","Feed..action.in.feed."
-"Shared Form Response to Feed","Feed..action.in.feed."
-"Shared Media to Feed","Feed..action.in.feed."
-"Shared Moment to Feed","Feed..action.in.feed."
-"Shared Note to Feed","Feed..action.in.feed."
-"Shared Link to Feed","Feed..action.in.feed."
-"Shared Post to Feed","Feed..action.in.feed."
-"Shared Program to Feed","Feed..action.in.feed."
-"Shared Result to Feed","Feed..action.in.feed."
-"Commented on Feed Post","Feed..action.in.feed."
-"Invited User to Private Space","Invite"
-"Invited User to Shared Space","Invite"
-"Invited User to Group Space","Invite"
-"User Onboarded","Invite"
-"Created Program","Create"
-"Created Private Collection","Create"
-"Created Public Collection","Create"
-"Created Private Moment","Create"
-"Created Public Moment","Create"
-"Made Collection Private","Create"
-"Made Collection Public","Create"
-"Made Moment Private","Create"
-"Made Moment Public","Create"
-"Created Note in Content","Create"
-"Started Content","Consume"
-"Started Moment","Consume"
-"Answered Assessment Item","Consume"
-"FamilyLife - Clicked Donate Button","Consume"
-"FamilyLife - Clicked Resource Link","Consume"
-"FamilyLife - Listened to Broadcast","Consume"
-"Progressed Through Content","Consume"
-"User Added Page","Consume"
-"User Removed Page","Consume"
-"Connected to Champion","Connect"
-"Connected to User","Connect"
-"Followed User","Connect"
+platform_action,group
+Added Champion Analytics Widget,Other.actions
+Added Champion Assessment Analytics Widget,Other.actions
+Added Champion Cohort Overview Widget,Other.actions
+Added Champion Program Analytics Widget,Other.actions
+Added User Program Progress Widget,Other.actions
+Added User Space Widget,Other.actions
+Became Champion Member,Other.actions
+Became Organization Member,Other.actions
+Champion Membership Invitation Accepted,Other.actions
+Champion Membership Invitation Declined,Other.actions
+Rated Champion,Other.actions
+Rated Program,Other.actions
+Added To-Do Item from Content,To.do
+Assigned To-Do Item,To.do
+Completed To-Do Item,To.do
+Deleted To-Do Item,To.do
+Shared Collection to Group Space,Space..action.in.space.
+Shared Collection to Private Space,Space..action.in.space.
+Shared Collection to Shared Space,Space..action.in.space.
+Shared Form Response to Group Space,Space..action.in.space.
+Shared Form Response to Private Space,Space..action.in.space.
+Shared Form Response to Shared Space,Space..action.in.space.
+Shared Link to Group Space,Space..action.in.space.
+Shared Link to Private Space,Space..action.in.space.
+Shared Link to Shared Space,Space..action.in.space.
+Shared Media to Group Space,Space..action.in.space.
+Shared Media to Private Space,Space..action.in.space.
+Shared Media to Shared Space,Space..action.in.space.
+Shared Moment to Group Space,Space..action.in.space.
+Shared Moment to Private Space,Space..action.in.space.
+Shared Moment to Shared Space,Space..action.in.space.
+Shared Note to Group Space,Space..action.in.space.
+Shared Note to Private Space,Space..action.in.space.
+Shared Note to Shared Space,Space..action.in.space.
+Shared Post to Group Space,Space..action.in.space.
+Shared Post to Private Space,Space..action.in.space.
+Shared Post to Shared Space,Space..action.in.space.
+Shared Program to Group Space,Space..action.in.space.
+Shared Program to Private Space,Space..action.in.space.
+Shared Program to Shared Space,Space..action.in.space.
+Shared Result to Group Space,Space..action.in.space.
+Shared Result to Private Space,Space..action.in.space.
+Shared Result to Shared Space,Space..action.in.space.
+Joined Group Space,Space..action.in.space.
+Joined Private Space,Space..action.in.space.
+Joined Shared Space,Space..action.in.space.
+Joined Unactivated Space,Space..action.in.space.
+Left Group Space,Space..action.in.space.
+Left Private Space,Space..action.in.space.
+Left Shared Space,Space..action.in.space.
+Space Membership Invitation Accepted,Space..action.in.space.
+Space Membership Invitation Declined,Space..action.in.space.
+Commented on Private Space,Space..action.in.space.
+Commented on Shared Space,Space..action.in.space.
+Commented on Group Space,Space..action.in.space.
+Posted to Private Space,Space..action.in.space.
+Posted to Shared Space,Space..action.in.space.
+Posted to Group Space,Space..action.in.space.
+Posted to Feed,Feed..action.in.feed.
+Shared Collection to Feed,Feed..action.in.feed.
+Shared Form Response to Feed,Feed..action.in.feed.
+Shared Media to Feed,Feed..action.in.feed.
+Shared Moment to Feed,Feed..action.in.feed.
+Shared Note to Feed,Feed..action.in.feed.
+Shared Link to Feed,Feed..action.in.feed.
+Shared Post to Feed,Feed..action.in.feed.
+Shared Program to Feed,Feed..action.in.feed.
+Shared Result to Feed,Feed..action.in.feed.
+Commented on Feed Post,Feed..action.in.feed.
+Invited User to Private Space,Invite
+Invited User to Shared Space,Invite
+Invited User to Group Space,Invite
+User Onboarded,Invite
+Created Program,Create
+Created Private Collection,Create
+Created Public Collection,Create
+Created Private Moment,Create
+Created Public Moment,Create
+Made Collection Private,Create
+Made Collection Public,Create
+Made Moment Private,Create
+Made Moment Public,Create
+Created Note in Content,Create
+Started Content,Consume
+Started Moment,Consume
+Answered Assessment Item,Consume
+FamilyLife - Clicked Donate Button,Consume
+FamilyLife - Clicked Resource Link,Consume
+FamilyLife - Listened to Broadcast,Consume
+Progressed Through Content,Consume
+User Added Page,Consume
+User Removed Page,Consume
+Connected to Champion,Connect
+Connected to User,Connect
+Followed User,Connect
+Post to Timeline,Feed..action.in.feed.
+Shared Collection to Timeline,Feed..action.in.feed.
+Shared Form Response to Timeline,Feed..action.in.feed.
+Shared Media to Timeline,Feed..action.in.feed.
+Shared Moment to Timeline,Feed..action.in.feed.
+Shared Note to Timeline,Feed..action.in.feed.
+Shared Link to Timeline,Feed..action.in.feed.
+Shared Post to Timeline,Feed..action.in.feed.
+Shared Program to Timeline,Feed..action.in.feed.
+Shared Result to Timeline,Feed..action.in.feed.
+Commented on Timeline Post,Feed..action.in.feed.
