@@ -208,3 +208,22 @@ Updated WebLinkElement Element,,Champion.Others,FALSE
 User Added Page,,,FALSE
 User Onboarded,User Onboarded,Receive.Value,TRUE
 User Removed Page,,,FALSE
+Became Organization Member,,Champion.Others,
+Commented on Private Space,Commented,Invest.for.Self.Us,
+Commented on Shared Space,Commented,Champion.Others,
+Commented on Group Space,Commented,Champion.Others,
+Posted to Feed,Posted,Champion.Others,
+Shared Collection to Feed,Shared,Champion.Others,
+Shared Form Response to Feed,Shared,Champion.Others,
+Shared Media to Feed,Shared,Champion.Others,
+Shared Moment to Feed,Shared,Champion.Others,
+Shared Note to Feed,Shared,Champion.Others,
+Shared Link to Feed,Shared,Champion.Others,
+Shared Post to Feed,Shared,Champion.Others,
+Shared Program to Feed,Shared,Champion.Others,
+Shared Result to Feed,Shared,Champion.Others,
+Commented on Feed Post,Commented,Champion.Others,
+Invited User to Private Space,Extended Invitation,Champion.Others,
+Invited User to Shared Space,Extended Invitation,Champion.Others,
+Invited User to Group Space,Extended Invitation,Champion.Others,
+Connected to User,Connected to user,Invest.for.Self.Us,
