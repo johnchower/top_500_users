@@ -11,7 +11,7 @@ chiplot <- function(user_set,
   upg %>%
     select(-date_id) %>%
     mutate(in_subset = ifelse(user_id %in% user_set, user_set_name, "other")) %>%
-    group_by(in_subset, group) %>%
+    group_by(in_subset, new_group) %>%
     summarise(number_of_actions = n()) %>%
     chisquare_analysis %>%
     {.$results} %>%
@@ -22,5 +22,4 @@ chiplot <- function(user_set,
                            pthresh = p.thresh,
                            positive_only = positive.only,
                            ...)
-    
 }

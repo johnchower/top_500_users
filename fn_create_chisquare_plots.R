@@ -23,7 +23,7 @@ create_chisquare_plots <- function(
          plot_data %<>% filter(zscore >= 0)
        }
        
-       plot_data %<>% filter(!(group %in% groups_to_remove))
+       plot_data %<>% filter(!(new_group %in% groups_to_remove))
        
         out_plot <-  
           plot_ly(
