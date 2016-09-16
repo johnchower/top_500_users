@@ -11,4 +11,4 @@ user_tier_cutoffs <- c(10, 50, 100, 250, 500) # Default: look at top 10, 50, 100
 #   the past 28 days.
 ranking_metric <- "actions"
 
-outloc <- "~/Google Drive/Analytics_graphs/top_500_active_users_aug_31_prime"
+outloc <- "~/Google Drive/Analytics_graphs/top_500_sep_26"

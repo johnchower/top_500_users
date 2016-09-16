@@ -11,63 +11,63 @@ Champion Membership Invitation Accepted,Other.actions
 Champion Membership Invitation Declined,Other.actions
 Rated Champion,Other.actions
 Rated Program,Other.actions
-Added To-Do Item from Content,To.do
-Assigned To-Do Item,To.do
-Completed To-Do Item,To.do
-Deleted To-Do Item,To.do
-Shared Collection to Group Space,Space..action.in.space.
-Shared Collection to Private Space,Space..action.in.space.
-Shared Collection to Shared Space,Space..action.in.space.
-Shared Form Response to Group Space,Space..action.in.space.
-Shared Form Response to Private Space,Space..action.in.space.
-Shared Form Response to Shared Space,Space..action.in.space.
-Shared Link to Group Space,Space..action.in.space.
-Shared Link to Private Space,Space..action.in.space.
-Shared Link to Shared Space,Space..action.in.space.
-Shared Media to Group Space,Space..action.in.space.
-Shared Media to Private Space,Space..action.in.space.
-Shared Media to Shared Space,Space..action.in.space.
-Shared Moment to Group Space,Space..action.in.space.
-Shared Moment to Private Space,Space..action.in.space.
-Shared Moment to Shared Space,Space..action.in.space.
-Shared Note to Group Space,Space..action.in.space.
-Shared Note to Private Space,Space..action.in.space.
-Shared Note to Shared Space,Space..action.in.space.
-Shared Post to Group Space,Space..action.in.space.
-Shared Post to Private Space,Space..action.in.space.
-Shared Post to Shared Space,Space..action.in.space.
-Shared Program to Group Space,Space..action.in.space.
-Shared Program to Private Space,Space..action.in.space.
-Shared Program to Shared Space,Space..action.in.space.
-Shared Result to Group Space,Space..action.in.space.
-Shared Result to Private Space,Space..action.in.space.
-Shared Result to Shared Space,Space..action.in.space.
-Joined Group Space,Space..action.in.space.
-Joined Private Space,Space..action.in.space.
-Joined Shared Space,Space..action.in.space.
-Joined Unactivated Space,Space..action.in.space.
-Left Group Space,Space..action.in.space.
-Left Private Space,Space..action.in.space.
-Left Shared Space,Space..action.in.space.
-Space Membership Invitation Accepted,Space..action.in.space.
-Space Membership Invitation Declined,Space..action.in.space.
-Commented on Private Space,Space..action.in.space.
-Commented on Shared Space,Space..action.in.space.
-Commented on Group Space,Space..action.in.space.
-Posted to Private Space,Space..action.in.space.
-Posted to Shared Space,Space..action.in.space.
-Posted to Group Space,Space..action.in.space.
-Posted to Feed,Feed..action.in.feed.
-Shared Collection to Feed,Feed..action.in.feed.
-Shared Form Response to Feed,Feed..action.in.feed.
-Shared Media to Feed,Feed..action.in.feed.
-Shared Moment to Feed,Feed..action.in.feed.
-Shared Note to Feed,Feed..action.in.feed.
-Shared Link to Feed,Feed..action.in.feed.
-Shared Post to Feed,Feed..action.in.feed.
-Shared Program to Feed,Feed..action.in.feed.
-Shared Result to Feed,Feed..action.in.feed.
-Commented on Feed Post,Feed..action.in.feed.
+Added To.do Item from Content,To.do
+Assigned To.do Item,To.do
+Completed To.do Item,To.do
+Deleted To.do Item,To.do
+Shared Collection to Group Space,Space
+Shared Collection to Private Space,Space
+Shared Collection to Shared Space,Space
+Shared Form Response to Group Space,Space
+Shared Form Response to Private Space,Space
+Shared Form Response to Shared Space,Space
+Shared Link to Group Space,Space
+Shared Link to Private Space,Space
+Shared Link to Shared Space,Space
+Shared Media to Group Space,Space
+Shared Media to Private Space,Space
+Shared Media to Shared Space,Space
+Shared Moment to Group Space,Space
+Shared Moment to Private Space,Space
+Shared Moment to Shared Space,Space
+Shared Note to Group Space,Space
+Shared Note to Private Space,Space
+Shared Note to Shared Space,Space
+Shared Post to Group Space,Space
+Shared Post to Private Space,Space
+Shared Post to Shared Space,Space
+Shared Program to Group Space,Space
+Shared Program to Private Space,Space
+Shared Program to Shared Space,Space
+Shared Result to Group Space,Space
+Shared Result to Private Space,Space
+Shared Result to Shared Space,Space
+Joined Group Space,Space
+Joined Private Space,Space
+Joined Shared Space,Space
+Joined Unactivated Space,Space
+Left Group Space,Space
+Left Private Space,Space
+Left Shared Space,Space
+Space Membership Invitation Accepted,Space
+Space Membership Invitation Declined,Space
+Commented on Private Space,Space
+Commented on Shared Space,Space
+Commented on Group Space,Space
+Posted to Private Space,Space
+Posted to Shared Space,Space
+Posted to Group Space,Space
+Posted to Feed,Feed
+Shared Collection to Feed,Feed
+Shared Form Response to Feed,Feed
+Shared Media to Feed,Feed
+Shared Moment to Feed,Feed
+Shared Note to Feed,Feed
+Shared Link to Feed,Feed
+Shared Post to Feed,Feed
+Shared Program to Feed,Feed
+Shared Result to Feed,Feed
+Commented on Feed Post,Feed
 Invited User to Private Space,Invite
 Invited User to Shared Space,Invite
 Invited User to Group Space,Invite
@@ -94,14 +94,14 @@ User Removed Page,Consume
 Connected to Champion,Connect
 Connected to User,Connect
 Followed User,Connect
-Post to Timeline,Feed..action.in.feed.
-Shared Collection to Timeline,Feed..action.in.feed.
-Shared Form Response to Timeline,Feed..action.in.feed.
-Shared Media to Timeline,Feed..action.in.feed.
-Shared Moment to Timeline,Feed..action.in.feed.
-Shared Note to Timeline,Feed..action.in.feed.
-Shared Link to Timeline,Feed..action.in.feed.
-Shared Post to Timeline,Feed..action.in.feed.
-Shared Program to Timeline,Feed..action.in.feed.
-Shared Result to Timeline,Feed..action.in.feed.
-Commented on Timeline Post,Feed..action.in.feed.
+Post to Timeline,Feed
+Shared Collection to Timeline,Feed
+Shared Form Response to Timeline,Feed
+Shared Media to Timeline,Feed
+Shared Moment to Timeline,Feed
+Shared Note to Timeline,Feed
+Shared Link to Timeline,Feed
+Shared Post to Timeline,Feed
+Shared Program to Timeline,Feed
+Shared Result to Timeline,Feed
+Commented on Timeline Post,Feed

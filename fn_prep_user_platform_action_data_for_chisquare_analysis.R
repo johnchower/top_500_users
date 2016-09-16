@@ -1,5 +1,4 @@
-# Function: prep_user_platform_action_data_for_chisquare_analysis
-
+# Function: prep_user_platform_action_data_for_chisquare_analysis 
 prep_user_platform_action_data_for_chisquare_analysis <- 
   function(user_set,
     mindate = one_month_ago,
