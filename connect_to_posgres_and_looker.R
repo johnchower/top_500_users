@@ -11,3 +11,7 @@ con <-
     , user="jhower"
     , password=pass
 )
+
+looker_setup(id = "mz8bPyHzY7MY5JNhSmcj",
+             secret = "vttZrNKZGcCyB8xyGq68qfVR",
+             api_path = "https://api-looker.gloo.us/api/3.0")
