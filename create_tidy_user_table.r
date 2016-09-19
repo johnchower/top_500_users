@@ -8,7 +8,10 @@ user_pacount <- user_platform_action_date_group %>%
   filter(date_id > one_month_ago,
          date_id <= max_date) %>%
   group_by(user_id) %>%
-  summarise(variable = "pa_count", value=n()) %>%
+  summarise(pa_count = n()) %>%
+  arrange(desc(pa_count)) %>%
+  {cbind(., data.frame(pa_rank = 1:nrow(.)))} %>%
+  melt(id.vars = "user_id") %>%
   as.data.frame
 
 user_acctype_createddate_primarychamp <- user_createddate_champid %>%
@@ -95,7 +98,8 @@ tidy_user_table <- rbind(user_pacount,
                          user_belongs_to_cohort,
                          user_pct_champ_only,
                          user_connected_to_champion) %>%
-  filter(user_id %in% all_users)
+  filter(user_id %in% all_users) %>%
+  mutate(variable = as.character(variable))
 
 rm(user_pacount,
    user_acctype_createddate_primarychamp,
