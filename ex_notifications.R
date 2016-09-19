@@ -1,4 +1,4 @@
-notification_status <- dbGetQuery(con,"
+user_response_rate <- dbGetQuery(con,"
   select user_id,
     status,
     count(*)
@@ -8,5 +8,10 @@ notification_status <- dbGetQuery(con,"
   ;") %>%
   group_by(user_id) %>%
   mutate(total_notifications = sum(count),
-         percent = count/total_notifications) %>%
-  arrange(user_id) 
+         percent = count/total_notifications,
+         status = ifelse(status > 0, status/status, 0)) %>%
+  group_by(user_id) %>%
+  summarise(variable = "response_rate", value  = sum(status*percent)) %>% 
+  {left_join(select(user_createddate_champid, user_id), .)}
+
+

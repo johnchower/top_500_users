@@ -24,4 +24,4 @@ champions_queried <-
     from champions
     where id=10;
     "
- )
+)
