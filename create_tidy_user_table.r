@@ -75,8 +75,9 @@ user_pct_champ_only <- user_platform_action_date_group %>%
   as.data.frame
 
 
-user_connected_to_champion <- run_inline_query(model = "gloo",
-                 view = "user_platform_action_facts",
+user_connected_to_champion <- 
+  run_inline_query(model = "gloo",
+                  view = "user_platform_action_facts",
                  fields = c("user_dimensions.id",
                           "user_connected_to_champion_dimensions.id"),
                  filters = list(c("user_dimensions.id", "24"))) %>%
@@ -93,7 +94,8 @@ tidy_user_table <- rbind(user_pacount,
                          user_response_rate,
                          user_belongs_to_cohort,
                          user_pct_champ_only,
-                         user_connected_to_champion)
+                         user_connected_to_champion) %>%
+  filter(user_id %in% all_users)
 
 rm(user_pacount,
    user_acctype_createddate_primarychamp,
