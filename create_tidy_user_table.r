@@ -2,11 +2,10 @@
 # This data frame is essential for having a flexible analysis that can be
 # modified easily and quickly.
 
-# Run it after you run 
-
-user_pacount <- user_platform_action_date_group %>%
+num_user_pacount <- user_platform_action_date_group %>%
   filter(date_id > one_month_ago,
-         date_id <= max_date) %>%
+         date_id <= max_date,
+         user_id %in% all_users) %>%
   group_by(user_id) %>%
   summarise(pa_count = n()) %>%
   arrange(desc(pa_count)) %>%
@@ -14,35 +13,44 @@ user_pacount <- user_platform_action_date_group %>%
   melt(id.vars = "user_id") %>%
   as.data.frame
 
-user_acctype_createddate_primarychamp <- user_createddate_champid %>%
-  select(-Account_Type) %>%
+char_user_account_type <- user_createddate_champid %>%
+  select(user_id, Account_Type, account_type) %>%
   melt(id.vars = "user_id") %>%
   as.data.frame
 
+num_user_createddate_primarychamp <- user_createddate_champid %>%
+  select(user_id, account_created_date_id, primary_champion=champion_id) %>%
+  melt(id.vars = "user_id") %>%
+  mutate(value = as.numeric(value)) %>%
+  as.data.frame
 
-user_cornerstone_pct <- user_platform_action_date_group %>%
+num_user_cornerstone_count <- user_platform_action_date_group %>%
   filter(date_id > one_month_ago,
          date_id <= max_date) %>%
   group_by(user_id) %>%
   mutate(total_actions = n()) %>%
   ungroup %>%
   group_by(user_id, new_group) %>%
-  summarise(variable=paste0("cornerstone_pct_", new_group[1])
+  summarise(variable=paste0("cornerstone_count_", new_group[1])
             ,
-            value=n()/total_actions[1]) %>%
+            value=n()) %>%
   select(-new_group) %>%
   as.data.frame
 
-
-user_triangle_data <- triangle_diagram_data %>%
-  select(user_id, xval, yval, mode) %>%
-  rename(triangle_coord_x = xval, triangle_coord_y = yval,
-         triangle_mode = mode) %>%
+num_user_triangle_coords <- triangle_diagram_data %>%
+  select(user_id, xval, yval) %>%
+  rename(triangle_coord_x = xval,
+         triangle_coord_y = yval) %>%
   melt(id.vars = "user_id") %>%
   as.data.frame
 
+char_user_triangle_data <- triangle_diagram_data %>%
+  select(user_id, mode) %>%
+  rename(triangle_mode = mode) %>%
+  melt(id.vars = "user_id") %>%
+  as.data.frame
 
-user_response_rate <- dbGetQuery(con,"
+num_user_response_rate <- dbGetQuery(con,"
   select user_id,
     status,
     count(*)
@@ -57,17 +65,17 @@ user_response_rate <- dbGetQuery(con,"
          status = ifelse(status > 0, status/status, 0)) %>%
   group_by(user_id) %>%
   summarise(variable = "response_rate", value  = sum(status*percent)) %>% 
-  {left_join(select(user_createddate_champid, user_id), .)} %>%
-  as.data.frame
+  {join(select(user_createddate_champid, user_id), .)} %>%
+  as.data.frame %>%
+  ungroup %>%
+  filter(!is.na(variable), !is.na(value))
 
-
-user_belongs_to_cohort <- user_cohort_groups %>%
+cohortdata_char_user_belongs_to_cohort <- user_cohort_groups %>%
   select(user_id, cohort_group_name, belongs_to_cohort) %>%
   melt(id.vars = "user_id") %>%
   as.data.frame
 
-
-user_pct_champ_only <- user_platform_action_date_group %>%
+num_user_pct_champ_only <- user_platform_action_date_group %>%
   filter(date_id > one_month_ago,
          date_id <= max_date) %>%
   left_join(select(platform_action_facts, platform_action, end_user_allowed)) %>%
@@ -78,7 +86,7 @@ user_pct_champ_only <- user_platform_action_date_group %>%
   as.data.frame
 
 
-user_connected_to_champion <- 
+champdata_num_user_connected_to_champion <- 
   run_inline_query(model = "gloo",
                   view = "user_platform_action_facts",
                  fields = c("user_dimensions.id",
@@ -89,24 +97,26 @@ user_connected_to_champion <-
   melt(id.vars = "user_id") %>%
   as.data.frame
 
+num_tidy_user_table <- rbind(num_user_cornerstone_count,
+                             num_user_createddate_primarychamp,
+                             num_user_pacount,
+                             num_user_pct_champ_only,
+                             num_user_response_rate,
+                             num_user_triangle_coords) %>%
+  filter(user_id %in% all_users)
 
-tidy_user_table <- rbind(user_pacount,
-                         user_acctype_createddate_primarychamp,
-                         user_cornerstone_pct,
-                         user_triangle_data,
-                         user_response_rate,
-                         user_belongs_to_cohort,
-                         user_pct_champ_only,
-                         user_connected_to_champion) %>%
-  filter(user_id %in% all_users) %>%
-  mutate(variable = as.character(variable))
+char_tidy_user_table <- rbind(char_user_account_type,
+                              char_user_triangle_data) %>%
+  filter(user_id %in% all_users)
 
-rm(user_pacount,
-   user_acctype_createddate_primarychamp,
-   user_cornerstone_pct,
-   user_triangle_data,
-   user_response_rate,
-   user_belongs_to_cohort,
-   user_pct_champ_only,
-   user_connected_to_champion)
+
+rm(num_user_cornerstone_count,
+   num_user_createddate_primarychamp,
+   num_user_pacount,
+   num_user_pct_champ_only,
+   num_user_response_rate,
+   num_user_triangle_coords,
+   char_user_account_type,
+   char_user_triangle_data)
+
 

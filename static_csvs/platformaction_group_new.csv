@@ -1,107 +1,229 @@
 platform_action,group
+Account Created,
 Added Champion Analytics Widget,Other.actions
 Added Champion Assessment Analytics Widget,Other.actions
 Added Champion Cohort Overview Widget,Other.actions
 Added Champion Program Analytics Widget,Other.actions
+Added To-Do Item from Content,To.do
 Added User Program Progress Widget,Other.actions
 Added User Space Widget,Other.actions
+Answered Assessment Item,Consume
+Assigned To-Do Item,To.do
 Became Champion Member,Other.actions
 Became Organization Member,Other.actions
 Champion Membership Invitation Accepted,Other.actions
 Champion Membership Invitation Declined,Other.actions
-Rated Champion,Other.actions
-Rated Program,Other.actions
-Added To-Do Item from Content,To.do
-Assigned To-Do Item,To.do
+Cloned Program,
+Commented on Champion Group Space Post,Space
+Commented on Feed Post,Feed
+Commented on Gloofie Space Post,Space
+Commented on Group Space,Space
+Commented on Group Space Post,Space
+Commented on Private Space,Space
+Commented on Private Space Post,Space
+Commented on Shared Space,Space
+Commented on Shared Space Post,Space
+Commented on Timeline Post,Feed
+Commented on Unactivated Space Post,Space
+Commented on User Group Space Post,Space
 Completed To-Do Item,To.do
+Connected to Champion,Connect
+Connected to User,Connect
+Created a New Dashboard,Create
+Created AddToQueueElement Element,
+Created AssessmentMetricPrerequisite Prerequisite,
+Created AssessmentResultPrerequisite Prerequisite,
+Created BlockquoteElement Element,
+Created ChampionConnectElement Element,
+Created CohortConnectElement Element,
+Created ConfigureChampionDashboardElement Element,
+Created ConfigureUserDashboardElement Element,
+Created ContentNode Node,
+Created CreateSpaceElement Element,
+Created DisplayChildrenElement Element,
+Created EparachuteElement Element,
+Created FormElement Element,
+Created FormReferenceElement Element,
+Created Gloofie Space,Space
+Created Group Space,Space
+Created HeaderElement Element,
+Created HorizontalRuleElement Element,
+Created ImageElement Element,
+Created IntervalSinceStartPrerequisite Prerequisite,
+Created JoinGroupSpaceElement Element,
+Created ListElement Element,
+Created MomentElement Element,
+Created Note in Content,Create
+Created ParagraphElement Element,
+Created PlatformLinkElement Element,
+Created Private Collection,Create
+Created Private Moment,Create
+Created Private Space,Space
+Created Program,Create
+Created Public Collection,Create
+Created Public Moment,Create
+Created QuestionElement Element,
+Created ReferenceNode Node,
+Created ResultElement Element,
+Created Shared Space,Space
+Created ToDoListElement Element,
+Created Unactivated Space,Space
+Created UnlockDatePrerequisite Prerequisite,
+Created User Group Space,Space
+Created UserImageElement Element,
+Created UserNoteElement Element,
+Created VideoElement Element,
+Created WebLinkElement Element,
+Deleted Element,
+Deleted Node,
+Deleted Prerequisite,
+Deleted Program,
 Deleted To-Do Item,To.do
-Shared Collection to Group Space,Space
-Shared Collection to Private Space,Space
-Shared Collection to Shared Space,Space
-Shared Form Response to Group Space,Space
-Shared Form Response to Private Space,Space
-Shared Form Response to Shared Space,Space
-Shared Link to Group Space,Space
-Shared Link to Private Space,Space
-Shared Link to Shared Space,Space
-Shared Media to Group Space,Space
-Shared Media to Private Space,Space
-Shared Media to Shared Space,Space
-Shared Moment to Group Space,Space
-Shared Moment to Private Space,Space
-Shared Moment to Shared Space,Space
-Shared Note to Group Space,Space
-Shared Note to Private Space,Space
-Shared Note to Shared Space,Space
-Shared Post to Group Space,Space
-Shared Post to Private Space,Space
-Shared Post to Shared Space,Space
-Shared Program to Group Space,Space
-Shared Program to Private Space,Space
-Shared Program to Shared Space,Space
-Shared Result to Group Space,Space
-Shared Result to Private Space,Space
-Shared Result to Shared Space,Space
+FamilyLife - Clicked Donate Button,Consume
+FamilyLife - Clicked Resource Link,Consume
+FamilyLife - Listened to Broadcast,Consume
+Followed Champion,Connect
+Followed User,Connect
+Invited User To Champion Group Space,Invite
+Invited User To Gloofie Space,Invite
+Invited User to Group Space,Invite
+Invited User To Group Space,Invite
+Invited User to Private Space,Invite
+Invited User To Private Space,Invite
+Invited User to Shared Space,Invite
+Invited User To Shared Space,Invite
+Invited User To Unactivated Space,Invite
+Invited User To User Group Space,Invite
+Joined Champion Group Space,Space
+Joined Gloofie Space,Space
 Joined Group Space,Space
 Joined Private Space,Space
 Joined Shared Space,Space
 Joined Unactivated Space,Space
+Joined User Group Space,Space
+Left Champion Group Space,
+Left Gloofie Space,
 Left Group Space,Space
 Left Private Space,Space
 Left Shared Space,Space
-Space Membership Invitation Accepted,Space
-Space Membership Invitation Declined,Space
-Commented on Private Space,Space
-Commented on Shared Space,Space
-Commented on Group Space,Space
-Posted to Private Space,Space
-Posted to Shared Space,Space
-Posted to Group Space,Space
-Posted to Feed,Feed
-Shared Collection to Feed,Feed
-Shared Form Response to Feed,Feed
-Shared Media to Feed,Feed
-Shared Moment to Feed,Feed
-Shared Note to Feed,Feed
-Shared Link to Feed,Feed
-Shared Post to Feed,Feed
-Shared Program to Feed,Feed
-Shared Result to Feed,Feed
-Commented on Feed Post,Feed
-Invited User to Private Space,Invite
-Invited User to Shared Space,Invite
-Invited User to Group Space,Invite
-User Onboarded,Invite
-Created Program,Create
-Created Private Collection,Create
-Created Public Collection,Create
-Created Private Moment,Create
-Created Public Moment,Create
+Made Collection,Create
 Made Collection Private,Create
 Made Collection Public,Create
 Made Moment Private,Create
 Made Moment Public,Create
-Created Note in Content,Create
+Post to Timeline,Feed
+Posted to Champion Group Space,Space
+Posted to Feed,Feed
+Posted to Group Space,Space
+Posted to Private Space,Space
+Posted to Shared Space,Space
+Posted to User Group Space,Space
+Progressed Through Content,Consume
+Rated Champion,Other.actions
+Rated Program,Other.actions
+Shared Collection to Champion Group Space,Space
+Shared Collection to Feed,Feed
+Shared Collection to Group Space,Space
+Shared Collection to Private Space,Space
+Shared Collection to Shared Space,Space
+Shared Collection to Timeline,Feed
+Shared Collection to User Group Space,Space
+Shared Form Response to Champion Group Space,Space
+Shared Form Response to Feed,Feed
+Shared Form Response to Group Space,Space
+Shared Form Response to Private Space,Space
+Shared Form Response to Shared Space,Space
+Shared Form Response to Timeline,Feed
+Shared Form Response to User Group Space,Space
+Shared Link to Champion Group Space,Space
+Shared Link to Feed,Feed
+Shared Link to Group Space,Space
+Shared Link to Private Space,Space
+Shared Link to Shared Space,Space
+Shared Link to Timeline,Feed
+Shared Link to User Group Space,Space
+Shared Media to Champion Group Space,Space
+Shared Media to Feed,Feed
+Shared Media to Group Space,Space
+Shared Media to Private Space,Space
+Shared Media to Shared Space,Space
+Shared Media to Timeline,Feed
+Shared Media to User Group Space,Space
+Shared Moment to Champion Group Space,Space
+Shared Moment to Feed,Feed
+Shared Moment to Group Space,Space
+Shared Moment to Private Space,Space
+Shared Moment to Shared Space,Space
+Shared Moment to Timeline,Feed
+Shared Moment to User Group Space,Space
+Shared Note to Champion Group Space,Space
+Shared Note to Feed,Feed
+Shared Note to Group Space,Space
+Shared Note to Private Space,Space
+Shared Note to Shared Space,Space
+Shared Note to Timeline,Feed
+Shared Note to User Group Space,Space
+Shared Post to Champion Group Space,Space
+Shared Post to Feed,Feed
+Shared Post to Group Space,Space
+Shared Post to Private Space,Space
+Shared Post to Shared Space,Space
+Shared Post to Timeline,Feed
+Shared Post to User Group Space,Space
+Shared Program to Champion Group Space,Space
+Shared Program to Feed,Feed
+Shared Program to Group Space,Space
+Shared Program to Private Space,Space
+Shared Program to Shared Space,Space
+Shared Program to Timeline,Feed
+Shared Program to User Group Space,Space
+Shared Result to Champion Group Space,Space
+Shared Result to Feed,Feed
+Shared Result to Group Space,Space
+Shared Result to Private Space,Space
+Shared Result to Shared Space,Space
+Shared Result to Timeline,Feed
+Shared Result to User Group Space,Space
+Space Membership Invitation Accepted,Space
+Space Membership Invitation Declined,Space
+Started Assessment,Consume
 Started Content,Consume
 Started Moment,Consume
-Answered Assessment Item,Consume
-FamilyLife - Clicked Donate Button,Consume
-FamilyLife - Clicked Resource Link,Consume
-FamilyLife - Listened to Broadcast,Consume
-Progressed Through Content,Consume
+Started Program,Consume
+Started Session,
+Unpublished Program,
+Updated AddToQueueElement Element,
+Updated AssessmentMetricPrerequisite Prerequisite,
+Updated AssessmentResultPrerequisite Prerequisite,
+Updated BlockquoteElement Element,
+Updated CohortConnectElement Element,
+Updated ContentNode Node,
+Updated CreateSpaceElement Element,
+Updated DisplayChildrenElement Element,
+Updated Element,
+Updated EparachuteElement Element,
+Updated FormElement Element,
+Updated HeaderElement Element,
+Updated HorizontalRuleElement Element,
+Updated ImageElement Element,
+Updated IntervalSinceStartPrerequisite Prerequisite,
+Updated JoinGroupSpaceElement Element,
+Updated ListElement Element,
+Updated MomentElement Element,
+Updated Node,
+Updated ParagraphElement Element,
+Updated PlatformLinkElement Element,
+Updated Prerequisite,
+Updated Program,
+Updated QuestionElement Element,
+Updated ReferenceNode Node,
+Updated ResultElement Element,
+Updated ToDoListElement Element,
+Updated UnlockDatePrerequisite Prerequisite,
+Updated UserImageElement Element,
+Updated UserNoteElement Element,
+Updated VideoElement Element,
+Updated WebLinkElement Element,
 User Added Page,Consume
+User Onboarded,Invite
 User Removed Page,Consume
-Connected to Champion,Connect
-Connected to User,Connect
-Followed User,Connect
-Post to Timeline,Feed
-Shared Collection to Timeline,Feed
-Shared Form Response to Timeline,Feed
-Shared Media to Timeline,Feed
-Shared Moment to Timeline,Feed
-Shared Note to Timeline,Feed
-Shared Link to Timeline,Feed
-Shared Post to Timeline,Feed
-Shared Program to Timeline,Feed
-Shared Result to Timeline,Feed
-Commented on Timeline Post,Feed

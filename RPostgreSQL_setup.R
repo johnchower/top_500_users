@@ -2,17 +2,14 @@ library(RPostgreSQL)
 
 drv <- dbDriver("PostgreSQL")
 
-pass <- get_password()
+pass <- readline(prompt = "Enter password: ")
 
-con <- 
-  dbConnect(
-    drv
-    , dbname="polymer_production"
-    , host="localhost"
-    , port=5442
-    , user="jhower"
-    , password="your password"
-)
+con <- dbConnect(drv,
+                 dbname="polymer_production",
+                 host="localhost",
+                 port=5442,
+                 user="jhower",
+                 password=pass)
 
 champions <- dbReadTable(con, "champions")
 
