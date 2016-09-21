@@ -1,5 +1,5 @@
 tufte_bar_chart <- function(df,
-                            ybreaks,
+                            ybreaks=0,
                             x_var, y_var,
                             ...){
   df %>%

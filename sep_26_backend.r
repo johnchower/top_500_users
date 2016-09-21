@@ -112,6 +112,69 @@ response_rate_list <- user_tier_cutoffs %>%
 
   })
 
-# Number of champion connections vs # of platform actions.
+# Triangle diagrams for active cohort groups
 
+triangle_diagram_data_list <- most_active_cohort_groups %>%
+  as.list %>% {
+  names(.) <- .
+  return(.) } %>%
+  llply(.fun = function(cohort_group){
+    user_set <- cohortdata_char_user_belongs_to_cohort %>%
+      filter(variable == "cohort_group_name",
+            value == cohort_group) %>%
+      {.$user_id} %>%
+      unique
+    
+    triangle_diagram_data %>%
+      filter(user_id %in% user_set)
+  })
 
+# Triangle diagrams for specific cohorts.
+
+  # First extract specific cohorts:
+  active_cohort_id_data <- user_cohort_groups %>%
+    filter(cohort_group_name %in% most_active_cohort_groups,
+           belongs_to_cohort) %>% {
+    inner_join(cohort_to_champion_bridges, .) } %>%
+    select(cohort_id, cohort_group_name) %>%
+    unique %>%
+    ddply(.variables = "cohort_group_name",
+          .fun = function(df){
+            top_500 <- num_tidy_user_table %>%
+              filter(variable == "pa_rank", value <= 500) %>%
+              {.$user_id} %>%
+              unique
+
+            user_to_cohort_bridges %>%
+              filter(cohort_id %in% df$cohort_id,
+                     user_id %in% top_500) %>%
+              group_by(cohort_id) %>%
+              summarise(number_of_users = length(unique(user_id))) %>%
+              arrange(desc(number_of_users))
+    })
+  
+  # Get triangle diagram data for user_ids belonging to each cohort:
+#   active_cohort_id_data %>%
+#     dlply(.variables = c("'cohort_group_name", "cohort_id"),
+#           .fun = function(df){
+#             group <- df$cohort_group_name[1]
+#             current_cohort_id <- df$cohort_id[1]
+#             active_users <- df$user_id
+#             users_belonging_to_current_cohort <- 
+# 
+# 
+#             triangle_diagram_data %>%
+#               filter(
+# 
+#           })
+# Number of champion connectiosn vs number of actions
+
+champ_connections_vs_activity <- num_tidy_user_table %>%
+  filter(variable %in% c("number_of_champion_connections", "pa_count")) %>%
+  dcast(user_id ~ variable, value.var = "value") %>% {
+  .[is.na(.)] <- 0 }
+
+# Percent of 'champion_only' actions vs number of actions
+
+# pct_champ_only_vs_activity <- num_tidy_user_table %>%
+#   filter(variable %in% c("

@@ -73,7 +73,9 @@ num_user_response_rate <- dbGetQuery(con,"
 cohortdata_char_user_belongs_to_cohort <- user_cohort_groups %>%
   select(user_id, cohort_group_name, belongs_to_cohort) %>%
   melt(id.vars = "user_id") %>%
-  as.data.frame
+  as.data.frame %>%
+  mutate(user_id = as.integer(user_id))
+
 
 num_user_pct_champ_only <- user_platform_action_date_group %>%
   filter(date_id > one_month_ago,
@@ -91,23 +93,36 @@ champdata_num_user_connected_to_champion <-
                   view = "user_platform_action_facts",
                  fields = c("user_dimensions.id",
                           "user_connected_to_champion_dimensions.id"),
-                 filters = list(c("user_dimensions.id", "24"))) %>%
+                 ) %>%
   rename(user_id = user_dimensions.id,
          connected_to_champion = user_connected_to_champion_dimensions.id) %>%
   melt(id.vars = "user_id") %>%
-  as.data.frame
+  as.data.frame %>%
+  mutate(user_id = as.integer(user_id))
+
+
+num_user_champion_connections <- champdata_num_user_connected_to_champion %>%
+  ungroup %>%
+  group_by(user_id) %>%
+  summarise(value = length(unique(value))) %>%
+  mutate(variable = "number_of_champion_connections") %>%
+  mutate(user_id = as.integer(user_id))
 
 num_tidy_user_table <- rbind(num_user_cornerstone_count,
                              num_user_createddate_primarychamp,
                              num_user_pacount,
                              num_user_pct_champ_only,
                              num_user_response_rate,
-                             num_user_triangle_coords) %>%
-  filter(user_id %in% all_users)
+                             num_user_triangle_coords,
+                             num_user_champion_connections) %>%
+  filter(user_id %in% all_users) %>%
+  mutate(user_id = as.integer(user_id))
+
 
 char_tidy_user_table <- rbind(char_user_account_type,
                               char_user_triangle_data) %>%
-  filter(user_id %in% all_users)
+  filter(user_id %in% all_users) %>%
+  mutate(user_id = as.integer(user_id))
 
 
 rm(num_user_cornerstone_count,
